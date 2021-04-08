@@ -1,29 +1,23 @@
-# Pesetacoin Core [PTC]
-==========================
-PesetaCoin integration/staging tree
-================================
-
-http://www.pesetacoin.info
+# Pesetacoin Core [PTC] - Modified for Learning
 
 Copyright (c) 2009-2013 Bitcoin Developers<br />
 Copyright (c) 2011-2013 Litecoin Developers<br />
 Copyright (c) 2014-2017 PesetaCoin Developers
 
+Que Tranza? Hoy vamos... 
 
-Que es PesetaCoin?
-----------------
-ESPECIFICACIONES
+ESPECIFICACIONES (orig specs. pesetacoin)
 
 - Algoritmo Scrypt (POW)
-- Número total de monedas: 166,386,000 PTCs 
-- 166(.386) monedas por bloque (nueva tabla de recompensas)
-- Block target: 1 minuto 
-- Cambio de dificultad: Dinamico con Kimoto Gravity Well
-- Con soporte para Merged Mining
-- RPC Port: 16638
+- Número total de monedas (max coins): 166,386,000 PTCs 
+- 166(.386) monedas por bloque (nueva tabla de recompensas) - check below table for absurdity
+- Block target: 1 minuto - 1 minute to midnight
+- Cambio de dificultad: Dinamico con Kimoto Gravity Well - ah, ye olde kimoto
+- Con soporte para Merged Mining - bring on the stratum
+- RPC Port: 16638 - like the block reward and amount! fantastic
 - P2P Port: 16639
 
-Recompensa
+Recompensa - Compensaton
 ----------------------------------
 
     0 - 525,599:          166.386 PTC
@@ -34,11 +28,12 @@ Recompensa
     2,628,000 - 8,409,599:  5 PTC
     8,409,600+: 0 PTC
     
-Compilación sin entorno gráfico:
+WHAT THE HOLY FUCK? 166 million coins and block rewards for mining, only up to block 8.4 million? It's at 143,344,084 coins mined as of today, 4/7/2021. Who kept mining? 
+    
+Compilación sin entorno gráfico (instructions):
 ----------------------------------
-
  
-Instalar dependencias, clonar repositorio y compilar: 
+Instalar dependencias, clonar repositorio y compilar: (install clone and compile)
 
 	sudo apt-get update
 	sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev libminiupnpc-dev git libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libdb++-dev
@@ -53,7 +48,7 @@ Instalar dependencias, clonar repositorio y compilar:
  
 	
 
-Compilación con entorno gráfico:
+Compilación con entorno gráfico: (compile qt gui client)
 ----------------------------------
 
 ejecutar:
